@@ -1,0 +1,6 @@
+framework module Pods_Attendence_TrackerTests {
+  umbrella header "Pods-Attendence TrackerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183B0143C9FAADBBAABC3D96 /* Pods_Attendence_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA04D49E7CBAB7B083AC0 /* Pods_Attendence_Tracker.framework */; };
+		467F00E1245E8A03008E1885 /* swipecellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F00E0245E8A03008E1885 /* swipecellViewController.swift */; };
+		4695D36F245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695D36E245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift */; };
+		46C846CE245C6B82005A42E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846CD245C6B82005A42E0 /* AppDelegate.swift */; };
+		46C846D0245C6B82005A42E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846CF245C6B82005A42E0 /* SceneDelegate.swift */; };
+		46C846D2245C6B82005A42E0 /* FindCollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846D1245C6B82005A42E0 /* FindCollegeViewController.swift */; };
+		46C846D5245C6B82005A42E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C846D3245C6B82005A42E0 /* Main.storyboard */; };
+		46C846D7245C6B85005A42E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C846D6245C6B85005A42E0 /* Assets.xcassets */; };
+		46C846DA245C6B85005A42E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C846D8245C6B85005A42E0 /* LaunchScreen.storyboard */; };
+		46C846E5245C6B85005A42E0 /* Attendence_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846E4245C6B85005A42E0 /* Attendence_TrackerTests.swift */; };
+		46C846F0245C6B85005A42E0 /* Attendence_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846EF245C6B85005A42E0 /* Attendence_TrackerUITests.swift */; };
+		46C846FE245C6D3F005A42E0 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846FD245C6D3F005A42E0 /* College.swift */; };
+		46C84700245C70C5005A42E0 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846FF245C70C5005A42E0 /* Subject.swift */; };
+		46EBE3E9245D41A800854F0A /* SubjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EBE3E8245D41A800854F0A /* SubjectDetailViewController.swift */; };
+		5EB82A9A603654D956F7C7B8 /* Pods_Attendence_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16A9D11A23102397949D92 /* Pods_Attendence_TrackerTests.framework */; };
+		7A09077A80649D0918958D8C /* Pods_Attendence_Tracker_Attendence_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6FD02DE24FCBC1BD572ECB /* Pods_Attendence_Tracker_Attendence_TrackerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46C846E1245C6B85005A42E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C846C2245C6B82005A42E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C846C9245C6B82005A42E0;
+			remoteInfo = "Attendence Tracker";
+		};
+		46C846EC245C6B85005A42E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C846C2245C6B82005A42E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C846C9245C6B82005A42E0;
+			remoteInfo = "Attendence Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089E5A5043C83D47612D2D0C /* Pods-Attendence TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence TrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-Attendence TrackerTests/Pods-Attendence TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		182BA04D49E7CBAB7B083AC0 /* Pods_Attendence_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendence_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFE921381DC9D07B862B168 /* Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-Attendence Tracker-Attendence TrackerUITests/Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B6FD02DE24FCBC1BD572ECB /* Pods_Attendence_Tracker_Attendence_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendence_Tracker_Attendence_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467F00E0245E8A03008E1885 /* swipecellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swipecellViewController.swift; sourceTree = "<group>"; };
+		4695D36E245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCollegeDetailsViewController.swift; sourceTree = "<group>"; };
+		46C846CA245C6B82005A42E0 /* Attendence Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attendence Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C846CD245C6B82005A42E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46C846CF245C6B82005A42E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46C846D1245C6B82005A42E0 /* FindCollegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCollegeViewController.swift; sourceTree = "<group>"; };
+		46C846D4245C6B82005A42E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46C846D6245C6B85005A42E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46C846D9245C6B85005A42E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46C846DB245C6B85005A42E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C846E0245C6B85005A42E0 /* Attendence TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Attendence TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C846E4245C6B85005A42E0 /* Attendence_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendence_TrackerTests.swift; sourceTree = "<group>"; };
+		46C846E6245C6B85005A42E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C846EB245C6B85005A42E0 /* Attendence TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Attendence TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C846EF245C6B85005A42E0 /* Attendence_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendence_TrackerUITests.swift; sourceTree = "<group>"; };
+		46C846F1245C6B85005A42E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C846FD245C6D3F005A42E0 /* College.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
+		46C846FF245C70C5005A42E0 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		46EBE3E8245D41A800854F0A /* SubjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailViewController.swift; sourceTree = "<group>"; };
+		5A16A9D11A23102397949D92 /* Pods_Attendence_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendence_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B08557CCF8D74AB3E141E5F /* Pods-Attendence Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence Tracker.release.xcconfig"; path = "Target Support Files/Pods-Attendence Tracker/Pods-Attendence Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		A98BF15397431594C895F5DF /* Pods-Attendence Tracker-Attendence TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence Tracker-Attendence TrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Attendence Tracker-Attendence TrackerUITests/Pods-Attendence Tracker-Attendence TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D983B7A397E7A6F70CA7FF43 /* Pods-Attendence TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence TrackerTests.release.xcconfig"; path = "Target Support Files/Pods-Attendence TrackerTests/Pods-Attendence TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4C20C39EA7DC4FD64EDBA26 /* Pods-Attendence Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Attendence Tracker/Pods-Attendence Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C846C7245C6B82005A42E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183B0143C9FAADBBAABC3D96 /* Pods_Attendence_Tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C846DD245C6B85005A42E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB82A9A603654D956F7C7B8 /* Pods_Attendence_TrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C846E8245C6B85005A42E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A09077A80649D0918958D8C /* Pods_Attendence_Tracker_Attendence_TrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		467F00E2245E9766008E1885 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46C846D1245C6B82005A42E0 /* FindCollegeViewController.swift */,
+				4695D36E245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift */,
+				46EBE3E8245D41A800854F0A /* SubjectDetailViewController.swift */,
+				467F00E0245E8A03008E1885 /* swipecellViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46C846C1245C6B82005A42E0 = {
+			isa = PBXGroup;
+			children = (
+				46C846CC245C6B82005A42E0 /* Attendence Tracker */,
+				46C846E3245C6B85005A42E0 /* Attendence TrackerTests */,
+				46C846EE245C6B85005A42E0 /* Attendence TrackerUITests */,
+				46C846CB245C6B82005A42E0 /* Products */,
+				AA35FAFEECD5CD6D394EEEB5 /* Pods */,
+				BB8051D05B337D5AE6FE1F14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46C846CB245C6B82005A42E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C846CA245C6B82005A42E0 /* Attendence Tracker.app */,
+				46C846E0245C6B85005A42E0 /* Attendence TrackerTests.xctest */,
+				46C846EB245C6B85005A42E0 /* Attendence TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C846CC245C6B82005A42E0 /* Attendence Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				46C846CD245C6B82005A42E0 /* AppDelegate.swift */,
+				46C846CF245C6B82005A42E0 /* SceneDelegate.swift */,
+				467F00E2245E9766008E1885 /* Controller */,
+				46C846FD245C6D3F005A42E0 /* College.swift */,
+				46C846FF245C70C5005A42E0 /* Subject.swift */,
+				46C846D3245C6B82005A42E0 /* Main.storyboard */,
+				46C846D6245C6B85005A42E0 /* Assets.xcassets */,
+				46C846D8245C6B85005A42E0 /* LaunchScreen.storyboard */,
+				46C846DB245C6B85005A42E0 /* Info.plist */,
+			);
+			path = "Attendence Tracker";
+			sourceTree = "<group>";
+		};
+		46C846E3245C6B85005A42E0 /* Attendence TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				46C846E4245C6B85005A42E0 /* Attendence_TrackerTests.swift */,
+				46C846E6245C6B85005A42E0 /* Info.plist */,
+			);
+			path = "Attendence TrackerTests";
+			sourceTree = "<group>";
+		};
+		46C846EE245C6B85005A42E0 /* Attendence TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46C846EF245C6B85005A42E0 /* Attendence_TrackerUITests.swift */,
+				46C846F1245C6B85005A42E0 /* Info.plist */,
+			);
+			path = "Attendence TrackerUITests";
+			sourceTree = "<group>";
+		};
+		AA35FAFEECD5CD6D394EEEB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C20C39EA7DC4FD64EDBA26 /* Pods-Attendence Tracker.debug.xcconfig */,
+				7B08557CCF8D74AB3E141E5F /* Pods-Attendence Tracker.release.xcconfig */,
+				A98BF15397431594C895F5DF /* Pods-Attendence Tracker-Attendence TrackerUITests.debug.xcconfig */,
+				1FFE921381DC9D07B862B168 /* Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig */,
+				089E5A5043C83D47612D2D0C /* Pods-Attendence TrackerTests.debug.xcconfig */,
+				D983B7A397E7A6F70CA7FF43 /* Pods-Attendence TrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB8051D05B337D5AE6FE1F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182BA04D49E7CBAB7B083AC0 /* Pods_Attendence_Tracker.framework */,
+				2B6FD02DE24FCBC1BD572ECB /* Pods_Attendence_Tracker_Attendence_TrackerUITests.framework */,
+				5A16A9D11A23102397949D92 /* Pods_Attendence_TrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C846C9245C6B82005A42E0 /* Attendence Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C846F4245C6B85005A42E0 /* Build configuration list for PBXNativeTarget "Attendence Tracker" */;
+			buildPhases = (
+				6625486AA204E2BD289C96A1 /* [CP] Check Pods Manifest.lock */,
+				46C846C6245C6B82005A42E0 /* Sources */,
+				46C846C7245C6B82005A42E0 /* Frameworks */,
+				46C846C8245C6B82005A42E0 /* Resources */,
+				FFB140658111B06A02C1F919 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Attendence Tracker";
+			productName = "Attendence Tracker";
+			productReference = 46C846CA245C6B82005A42E0 /* Attendence Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46C846DF245C6B85005A42E0 /* Attendence TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C846F7245C6B85005A42E0 /* Build configuration list for PBXNativeTarget "Attendence TrackerTests" */;
+			buildPhases = (
+				D47C3A6C55D29325D98F83D0 /* [CP] Check Pods Manifest.lock */,
+				46C846DC245C6B85005A42E0 /* Sources */,
+				46C846DD245C6B85005A42E0 /* Frameworks */,
+				46C846DE245C6B85005A42E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C846E2245C6B85005A42E0 /* PBXTargetDependency */,
+			);
+			name = "Attendence TrackerTests";
+			productName = "Attendence TrackerTests";
+			productReference = 46C846E0245C6B85005A42E0 /* Attendence TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46C846EA245C6B85005A42E0 /* Attendence TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C846FA245C6B85005A42E0 /* Build configuration list for PBXNativeTarget "Attendence TrackerUITests" */;
+			buildPhases = (
+				8722FCA151DB935BED3DC33D /* [CP] Check Pods Manifest.lock */,
+				46C846E7245C6B85005A42E0 /* Sources */,
+				46C846E8245C6B85005A42E0 /* Frameworks */,
+				46C846E9245C6B85005A42E0 /* Resources */,
+				258CC5C80B9C6C9EA56FE009 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C846ED245C6B85005A42E0 /* PBXTargetDependency */,
+			);
+			name = "Attendence TrackerUITests";
+			productName = "Attendence TrackerUITests";
+			productReference = 46C846EB245C6B85005A42E0 /* Attendence TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C846C2245C6B82005A42E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ankush Jindal";
+				TargetAttributes = {
+					46C846C9245C6B82005A42E0 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					46C846DF245C6B85005A42E0 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 46C846C9245C6B82005A42E0;
+					};
+					46C846EA245C6B85005A42E0 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 46C846C9245C6B82005A42E0;
+					};
+				};
+			};
+			buildConfigurationList = 46C846C5245C6B82005A42E0 /* Build configuration list for PBXProject "Attendence Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46C846C1245C6B82005A42E0;
+			productRefGroup = 46C846CB245C6B82005A42E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46C846C9245C6B82005A42E0 /* Attendence Tracker */,
+				46C846DF245C6B85005A42E0 /* Attendence TrackerTests */,
+				46C846EA245C6B85005A42E0 /* Attendence TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C846C8245C6B82005A42E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C846DA245C6B85005A42E0 /* LaunchScreen.storyboard in Resources */,
+				46C846D7245C6B85005A42E0 /* Assets.xcassets in Resources */,
+				46C846D5245C6B82005A42E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C846DE245C6B85005A42E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C846E9245C6B85005A42E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258CC5C80B9C6C9EA56FE009 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attendence Tracker-Attendence TrackerUITests/Pods-Attendence Tracker-Attendence TrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attendence Tracker-Attendence TrackerUITests/Pods-Attendence Tracker-Attendence TrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attendence Tracker-Attendence TrackerUITests/Pods-Attendence Tracker-Attendence TrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6625486AA204E2BD289C96A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendence Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8722FCA151DB935BED3DC33D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendence Tracker-Attendence TrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47C3A6C55D29325D98F83D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendence TrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB140658111B06A02C1F919 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attendence Tracker/Pods-Attendence Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attendence Tracker/Pods-Attendence Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attendence Tracker/Pods-Attendence Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C846C6245C6B82005A42E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C846D2245C6B82005A42E0 /* FindCollegeViewController.swift in Sources */,
+				46C84700245C70C5005A42E0 /* Subject.swift in Sources */,
+				46C846CE245C6B82005A42E0 /* AppDelegate.swift in Sources */,
+				46EBE3E9245D41A800854F0A /* SubjectDetailViewController.swift in Sources */,
+				46C846D0245C6B82005A42E0 /* SceneDelegate.swift in Sources */,
+				46C846FE245C6D3F005A42E0 /* College.swift in Sources */,
+				4695D36F245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift in Sources */,
+				467F00E1245E8A03008E1885 /* swipecellViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C846DC245C6B85005A42E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C846E5245C6B85005A42E0 /* Attendence_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C846E7245C6B85005A42E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C846F0245C6B85005A42E0 /* Attendence_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46C846E2245C6B85005A42E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C846C9245C6B82005A42E0 /* Attendence Tracker */;
+			targetProxy = 46C846E1245C6B85005A42E0 /* PBXContainerItemProxy */;
+		};
+		46C846ED245C6B85005A42E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C846C9245C6B82005A42E0 /* Attendence Tracker */;
+			targetProxy = 46C846EC245C6B85005A42E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46C846D3245C6B82005A42E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46C846D4245C6B82005A42E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46C846D8245C6B85005A42E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46C846D9245C6B85005A42E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46C846F2245C6B85005A42E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46C846F3245C6B85005A42E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46C846F5245C6B85005A42E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C20C39EA7DC4FD64EDBA26 /* Pods-Attendence Tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8ZCRBMPMG;
+				INFOPLIST_FILE = "Attendence Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ankush.Attendence-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46C846F6245C6B85005A42E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B08557CCF8D74AB3E141E5F /* Pods-Attendence Tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8ZCRBMPMG;
+				INFOPLIST_FILE = "Attendence Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ankush.Attendence-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46C846F8245C6B85005A42E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089E5A5043C83D47612D2D0C /* Pods-Attendence TrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8ZCRBMPMG;
+				INFOPLIST_FILE = "Attendence TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ankush.Attendence-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Attendence Tracker.app/Attendence Tracker";
+			};
+			name = Debug;
+		};
+		46C846F9245C6B85005A42E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D983B7A397E7A6F70CA7FF43 /* Pods-Attendence TrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8ZCRBMPMG;
+				INFOPLIST_FILE = "Attendence TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ankush.Attendence-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Attendence Tracker.app/Attendence Tracker";
+			};
+			name = Release;
+		};
+		46C846FB245C6B85005A42E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98BF15397431594C895F5DF /* Pods-Attendence Tracker-Attendence TrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8ZCRBMPMG;
+				INFOPLIST_FILE = "Attendence TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ankush.Attendence-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Attendence Tracker";
+			};
+			name = Debug;
+		};
+		46C846FC245C6B85005A42E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FFE921381DC9D07B862B168 /* Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8ZCRBMPMG;
+				INFOPLIST_FILE = "Attendence TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ankush.Attendence-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Attendence Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C846C5245C6B82005A42E0 /* Build configuration list for PBXProject "Attendence Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C846F2245C6B85005A42E0 /* Debug */,
+				46C846F3245C6B85005A42E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C846F4245C6B85005A42E0 /* Build configuration list for PBXNativeTarget "Attendence Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C846F5245C6B85005A42E0 /* Debug */,
+				46C846F6245C6B85005A42E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C846F7245C6B85005A42E0 /* Build configuration list for PBXNativeTarget "Attendence TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C846F8245C6B85005A42E0 /* Debug */,
+				46C846F9245C6B85005A42E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C846FA245C6B85005A42E0 /* Build configuration list for PBXNativeTarget "Attendence TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C846FB245C6B85005A42E0 /* Debug */,
+				46C846FC245C6B85005A42E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46C846C2245C6B82005A42E0 /* Project object */;
+}

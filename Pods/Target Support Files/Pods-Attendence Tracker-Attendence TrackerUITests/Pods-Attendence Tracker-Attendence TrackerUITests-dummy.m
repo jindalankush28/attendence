@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Attendence_Tracker_Attendence_TrackerUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Attendence_Tracker_Attendence_TrackerUITests
+@end
