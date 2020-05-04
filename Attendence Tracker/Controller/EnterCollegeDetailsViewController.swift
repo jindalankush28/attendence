@@ -15,11 +15,12 @@ class EnterCollegeDetailsViewController: UIViewController{
     var collegeArray: Results<College>?
     let courseSelectionList = ["mbbs","eng"]
     let batchSelectionList = ["A","B","C","D"]
-  
+    
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var yearStepper: UIStepper!
     @IBOutlet weak var semLabel: UILabel!
     @IBOutlet weak var courseLabel: UILabel!
+    
     @IBOutlet weak var enterCollegeName: UITextField!
     @IBOutlet weak var semStep: UIStepper!
     @IBOutlet weak var batchLabel: UILabel!
@@ -29,6 +30,7 @@ class EnterCollegeDetailsViewController: UIViewController{
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        enterCollegeName.delegate = self
     }
     
     @IBAction func yearStepperIncrease(_ sender: UIStepper) {
@@ -42,21 +44,13 @@ class EnterCollegeDetailsViewController: UIViewController{
     }
    
     @IBAction func saveNextPress(_ sender: UIButton) {
+        
         self.saveNewCollege(newCollege)
         performSegue(withIdentifier: "goToSubjectDetails", sender: self)
     }
     
-    @IBAction func collegeNameEnter(_ sender: UITextField) {
-        
-        newCollege.collegeName = enterCollegeName.text ?? ""
-        
-        
-    }
-    
-    
-    
     func saveNewCollege(_ college: College){
-        
+        newCollege.collegeName = enterCollegeName.text ?? ""
         try! realm.write(){
             realm.add(college)
         }
@@ -105,7 +99,12 @@ extension EnterCollegeDetailsViewController:UIPickerViewDelegate,UIPickerViewDat
     }
     
 }
-
+extension EnterCollegeDetailsViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
     
     
     

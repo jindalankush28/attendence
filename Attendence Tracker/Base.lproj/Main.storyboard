@@ -100,12 +100,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter you college name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bit-uT-1G6">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your college name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bit-uT-1G6">
                                                 <rect key="frame" x="0.0" y="63" width="414" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="collegeNameEnter:" destination="BLA-jK-H1u" eventType="editingDidEnd" id="ViP-8L-cyT"/>
+                                                    <outlet property="delegate" destination="BLA-jK-H1u" id="liF-fb-3Tw"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -284,7 +284,7 @@
                         <outlet property="batchPicker" destination="pNZ-Rr-gUl" id="Fm1-ab-ABY"/>
                         <outlet property="courseLabel" destination="WT8-yc-nuO" id="My0-Go-Ww1"/>
                         <outlet property="coursePicker" destination="Xqc-Tc-s07" id="DOR-S5-1xS"/>
-                        <outlet property="enterCollegeName" destination="bit-uT-1G6" id="U96-1S-LLw"/>
+                        <outlet property="enterCollegeName" destination="bit-uT-1G6" id="2Lc-fM-B0w"/>
                         <outlet property="saveNext" destination="sGc-gk-ZX3" id="2Bu-Lk-km8"/>
                         <outlet property="semLabel" destination="Lg5-Oo-sRJ" id="0Ck-9a-sRq"/>
                         <outlet property="semStep" destination="9Zy-tJ-tWM" id="SDi-rl-hvT"/>

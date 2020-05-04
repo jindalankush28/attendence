@@ -12,7 +12,6 @@ class SwipeTableViewController: UITableViewController,SwipeTableViewCellDelegate
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "subDetails", for: indexPath) as! SwipeTableViewCell
-        
         cell.delegate = self
         return cell
     }
@@ -50,7 +49,7 @@ class SwipeTableViewController: UITableViewController,SwipeTableViewCellDelegate
     }
     func updateSubject(at indexPath: IndexPath){
             
-        }
+    }
 
     
 }

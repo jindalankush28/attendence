@@ -16,11 +16,12 @@ class SubjectDetailViewController: SwipeTableViewController{
     
     var subjArray: Results<Subject>?
     let realm = try! Realm()
-    var selectedCollege: College?{
+    
+    /*var selectedCollege: College?{
         didSet{
             loadSubject()
         }
-    }
+    }*/
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,45 +38,48 @@ class SubjectDetailViewController: SwipeTableViewController{
     }
     func updateSubjects(at indexPath: IndexPath){
         if let catdel = self.subjArray?[indexPath.row]{
-        do{
-            try self.realm.write{
-                self.realm.delete(catdel)
+            
+            do{
+                try self.realm.write{
+                    self.realm.delete(catdel)
+                }
+            }catch{
+                print(error)
             }
-        }catch{
-            print(error)
         }
-}
-}
+    }
     @IBAction func add(_ sender: UIBarButtonItem) {
         var textfield = UITextField()
         
         let alert = UIAlertController(title: "add Subject", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "add Subject", style: .default) { (action) in
-            if let currCollege = self.selectedCollege{
-                do{
-                    try self.realm.write{
-                        let newsubj = Subject()
-                        newsubj.subjectName = textfield.text!
-                        currCollege.subjects.append(newsubj)
-                    }
-                }catch{
-                    print(error)
-                }
-            }
-            self.tableView.reloadData()
             
-        }
-        alert.addTextField { (alerttf) in
-            alerttf.placeholder = "create new subject"
-            textfield = alerttf
+            
+            do{
+                try self.realm.write{
+                    let newsubj = Subject()
+                    newsubj.subjectName = textfield.text!
+                    
+                    
+                }
+            }catch{
+                print(error)
+            }
+        
+        self.tableView.reloadData()
+        
+    }
+    alert.addTextField { (alerttf) in
+    alerttf.placeholder = "create new subject"
+    textfield = alerttf
             
         }
         alert.addAction(action)
         present(alert,animated: true,completion: nil)
 
     }
-    func loadSubject(){
+    /*func loadSubject(){
         subjArray = selectedCollege?.subjects.sorted(byKeyPath: "subjectName", ascending: true)
         tableView.reloadData()
-    }
+    }*/
 }
