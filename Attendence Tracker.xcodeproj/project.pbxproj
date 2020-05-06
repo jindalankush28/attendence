@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		183B0143C9FAADBBAABC3D96 /* Pods_Attendence_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA04D49E7CBAB7B083AC0 /* Pods_Attendence_Tracker.framework */; };
+		467568812463060A001A78BF /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467568802463060A001A78BF /* TimeTableViewController.swift */; };
 		467F00E1245E8A03008E1885 /* swipecellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F00E0245E8A03008E1885 /* swipecellViewController.swift */; };
 		4695D36F245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695D36E245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift */; };
+		469CD33424607ED5000F5127 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 469CD33324607ED5000F5127 /* GoogleService-Info.plist */; };
 		46C846CE245C6B82005A42E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846CD245C6B82005A42E0 /* AppDelegate.swift */; };
 		46C846D0245C6B82005A42E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846CF245C6B82005A42E0 /* SceneDelegate.swift */; };
 		46C846D2245C6B82005A42E0 /* FindCollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C846D1245C6B82005A42E0 /* FindCollegeViewController.swift */; };
@@ -47,8 +49,10 @@
 		182BA04D49E7CBAB7B083AC0 /* Pods_Attendence_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendence_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFE921381DC9D07B862B168 /* Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-Attendence Tracker-Attendence TrackerUITests/Pods-Attendence Tracker-Attendence TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2B6FD02DE24FCBC1BD572ECB /* Pods_Attendence_Tracker_Attendence_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendence_Tracker_Attendence_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467568802463060A001A78BF /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		467F00E0245E8A03008E1885 /* swipecellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swipecellViewController.swift; sourceTree = "<group>"; };
 		4695D36E245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCollegeDetailsViewController.swift; sourceTree = "<group>"; };
+		469CD33324607ED5000F5127 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		46C846CA245C6B82005A42E0 /* Attendence Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attendence Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C846CD245C6B82005A42E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C846CF245C6B82005A42E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				4695D36E245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift */,
 				46EBE3E8245D41A800854F0A /* SubjectDetailViewController.swift */,
 				467F00E0245E8A03008E1885 /* swipecellViewController.swift */,
+				467568802463060A001A78BF /* TimeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				46C846D6245C6B85005A42E0 /* Assets.xcassets */,
 				46C846D8245C6B85005A42E0 /* LaunchScreen.storyboard */,
 				46C846DB245C6B85005A42E0 /* Info.plist */,
+				469CD33324607ED5000F5127 /* GoogleService-Info.plist */,
 			);
 			path = "Attendence Tracker";
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			files = (
 				46C846DA245C6B85005A42E0 /* LaunchScreen.storyboard in Resources */,
 				46C846D7245C6B85005A42E0 /* Assets.xcassets in Resources */,
+				469CD33424607ED5000F5127 /* GoogleService-Info.plist in Resources */,
 				46C846D5245C6B82005A42E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +445,7 @@
 				46C846FE245C6D3F005A42E0 /* College.swift in Sources */,
 				4695D36F245CAC4A00B36BE7 /* EnterCollegeDetailsViewController.swift in Sources */,
 				467F00E1245E8A03008E1885 /* swipecellViewController.swift in Sources */,
+				467568812463060A001A78BF /* TimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

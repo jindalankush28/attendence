@@ -5,6 +5,9 @@ target 'Attendence Tracker' do
   use_frameworks!
 
   # Pods for Attendence Tracker
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'Firebase/Database'
 pod 'RealmSwift'
 pod 'SwipeCellKit'
   target 'Attendence TrackerTests' do
